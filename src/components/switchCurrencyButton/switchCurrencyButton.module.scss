@@ -1,0 +1,19 @@
+@import '../../styles/colors.scss';
+
+.switchCurrencyButton {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: $secondary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 10px solid lighten($secondary, 50%);
+    cursor: pointer;
+    &:hover {
+        background: darken($secondary, 5%);
+    }
+    svg {
+        fill: $quaternary;
+    }
+}

@@ -1,0 +1,63 @@
+@import './colors.scss';
+
+// Main font size and family is set on public/index.html
+// 1em = 10px
+
+$fontfamily: 'Lato', sans-serif, Helvetica, Arial;
+
+@mixin fontHeadingMixin {
+    font-weight: 700;
+    font-size: 3.2em;
+    line-height: 1.3;
+    color: $primary;
+    &:first-child {
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
+
+@mixin fontInputMixin {
+    font-weight: 100;
+    font-size: 10em;
+    line-height: 1.3;
+    color: $primary;
+    font-family: $fontfamily;
+    &:first-child {
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
+
+@mixin fontParagraphMixin {
+    font-family: $fontfamily;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 1.5;
+    color: $primary;
+    &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
+@mixin fontParagraphBoldMixin {
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 1.5;
+    color: $primary;
+    &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
+@mixin fontParagraphSmallMixin {
+    font-weight: 400;
+    font-size: 1.6em;
+    line-height: 1.5;
+    color: $primary;
+    &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}

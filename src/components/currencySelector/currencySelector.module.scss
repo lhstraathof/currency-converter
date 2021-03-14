@@ -1,0 +1,146 @@
+@import '../../styles/colors.scss';
+@import '../../styles/typography.scss';
+
+.currencySelector {
+	position: relative;
+	width: 100%;
+}
+
+.button {
+	border: none;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	overflow: visible;
+
+	background: transparent;
+
+	/* inherit font & color from ancestor */
+	color: inherit;
+	font: inherit;
+
+	/* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+	line-height: normal;
+
+	/* Corrects font smoothing for webkit */
+	-webkit-font-smoothing: inherit;
+	-moz-osx-font-smoothing: inherit;
+
+	/* Corrects inability to style clickable `input` types in iOS */
+	-webkit-appearance: none;
+	&:focus {
+		outline: none;
+		box-shadow: none;
+	}
+}
+
+.selector {
+	display: block;
+	width: 100%;
+	cursor: pointer;
+	text-align: left;
+	border-bottom: 1px solid $primary;
+	padding: 10px 0;
+    background: $quaternary;
+    position: relative;
+}
+
+.top {
+	@include fontParagraphSmallMixin;
+	color: lighten($primary, 50%);
+}
+.bottom {
+	display: flex;
+	color: $primary;
+}
+.right {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+}
+.selectedCurrency {
+	@include fontParagraphBoldMixin;
+}
+
+.flagCircle {
+	display: inline-block;
+	overflow: hidden;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	position: relative;
+	border: 3px solid $quaternary;
+	box-shadow: 0 0 1px 2px $primary;
+	margin-left: 20px;
+	&:first-child {
+		margin-left: 0;
+		margin-right: 20px;
+	}
+}
+
+.chevron {
+	font-size: 1.5em;
+	color: $primary;
+}
+
+.flag {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 30px;
+}
+
+.dropdown {
+	position: absolute;
+	background: $tertiary;
+	width: 100%;
+	max-height: 400px;
+	overflow-y: auto;
+	z-index: 1;
+	box-shadow: rgba($primary, 0.2) 0px 7px 29px 0px;	
+}
+
+.ul {
+	list-style: none;
+	padding: 0;
+}
+.li {
+	padding: 0;
+	margin: 0;
+	&:not(:last-child) {
+		.dropdownButton {
+			border-bottom: 1px solid darken($tertiary, 20%);
+		}
+	}
+}
+
+.filter {
+	padding: 20px 20px 10px;
+	display: flex;
+}
+
+.searchIcon {
+	margin: 0 8px;
+}
+.filterInput {
+	margin-left: 12px;
+	flex-grow: 1;
+	@include fontParagraphMixin;
+	padding: 0 10px;
+}
+
+.dropdownButton {
+	cursor: pointer;
+	width: 100%;
+	display: flex;
+	padding: 10px 20px;
+	text-align: left;
+	&:hover {
+		background: darken($tertiary, 10%);
+	}
+}
+
+.dropdownButtonText {
+	@include fontParagraphBoldMixin;
+}

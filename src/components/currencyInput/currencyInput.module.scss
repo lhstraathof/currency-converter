@@ -1,0 +1,14 @@
+@import '../../styles/colors.scss';
+@import '../../styles/typography.scss';
+
+.currencyInput {
+	margin: 50px 0 0;
+	align-items: center;	
+}
+
+.input {
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid $primary;
+	@include fontInputMixin;
+}

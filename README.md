@@ -1,8 +1,101 @@
-# Getting Started with Create React App
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br />
+<p align="center">
 
-## Available Scripts
+  <h3 align="center">Currency Converter</h3>
+
+  <p align="center">
+    An awesome <strong>Currency Converter</strong> build in React, that also shows the currency value in Bitcoin.
+    <br />
+    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    ·
+    <a href="https://gitlab.com/larsamsterdam/react-currency-converter/-/issues">Report Bug</a>
+  </p>
+</p>
+
+
+
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+</details>
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+There are lots of currency converters out there, yet little that convert your currency to another and bitcoin at the same time.
+
+This project is the result of a code challenge. It does not include full unit-test coverage or performance optimization. Just examples of unit-tests as a confrontation piece.
+
+The design of the project is based on [this dribbble shot](https://dribbble.com/shots/6008455-Platora-Ui-Design/attachments/1291353?mode=media).
+
+### Built With
+
+This project is primarily build with
+* [React](https://reactjs.org/)
+
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+* yarn
+  ```sh
+  npm install yarn -g
+  ```
+
+### Installation
+
+1. Get a free API Key at [https://coinlayer.com/](https://coinlayer.com/)
+2. Clone the repo
+   ```sh
+   git clone https://gitlab.com/larsamsterdam/react-currency-converter.git
+   ```
+3. Install NPM packages
+   ```sh
+   yarn
+   ```
+4. Create `.env` file in root and Enter your API KEY in `.env`
+   ```TEXT
+   REACT_APP_CRYPTO_API_KEY='YOUR ACCESS KEY HERE'
+   ```
+
+
+
+<!-- USAGE EXAMPLES -->
+## Usage
 
 In the project directory, you can run:
 
@@ -29,42 +122,38 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<!-- LICENSE -->
+## License
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Distributed under the MIT License. See `LICENSE` for more information.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+<!-- CONTACT -->
+## Contact
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Lars Straathof - [Lars.Amsterdam](https://lars.amsterdam) - mail@lars.amsterdam
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Project Link: [https://gitlab.com/larsamsterdam/react-currency-converter](https://gitlab.com/larsamsterdam/react-currency-converter)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+* [Img Shields](https://shields.io)
+* [create-react-app](https://create-react-app.dev/)
+* [Currency Flags](https://github.com/transferwise/currency-flags)
+* [Currency Data](https://gist.github.com/Fluidbyte/2973986)
+* [Design Inspiration](https://dribbble.com/shots/6008455-Platora-Ui-Design/attachments/1291353?mode=media)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-url]: https://gitlab.com/larsamsterdam/react-currency-converter/-/blob/master/LICENSE
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/lars-straathof/

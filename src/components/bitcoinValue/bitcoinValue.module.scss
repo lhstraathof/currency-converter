@@ -1,0 +1,17 @@
+@import '../../styles/typography.scss';
+@import '../../styles/colors.scss';
+
+.h2 {
+	@include fontHeadingMixin;
+}
+
+.p {
+	@include fontParagraphMixin;
+	&:last-child {
+		margin-bottom: 40px;
+	}
+}
+
+.pGray {
+	color: $secondary;
+}

@@ -6,7 +6,6 @@ import styles from './bitcoinValue.module.scss';
 
 export const BitcoinValue = ({ currency, currencyInput }) => {
 	const { data, loading, error } = useBitcoinValueHooks(currency);
-	// console.log(data);
 	return (
 		<>
 			{!loading && data && data.rates && (

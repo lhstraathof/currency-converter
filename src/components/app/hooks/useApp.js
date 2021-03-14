@@ -87,7 +87,6 @@ export const useApp = () => {
 			setLoading(false);
 		}
 		if (errorApiCurrencyLatest) {
-			console.log(errorApiCurrencyLatest);
 			setError(errorApiCurrencyLatest);
 		}
 		if (errorApiCurrencyExchange) {

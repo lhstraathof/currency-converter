@@ -11,7 +11,6 @@ export const useDataApi = () => {
 			fetch(apiUrl)
 				.then((response) => response.json())
 				.then((response) => {
-					console.log(response);
 					if (response && response.error) {
 						setError(response.error);
 						return setLoading(false);

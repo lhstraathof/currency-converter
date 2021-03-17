@@ -1,5 +1,5 @@
-import { render, screen } from '@testing-library/react';
-import { App } from './index';
+import { render } from '@testing-library/react';
+import { App } from '@components';
 
 it('renders App without crashing', () => {
 	render(<App />);

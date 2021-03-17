@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorMessage matches snapshot 1`] = `
+<div
+  className="error"
+>
+  <h2
+    className="h2"
+  >
+    title
+  </h2>
+  <p
+    className="p"
+  >
+    error
+  </p>
+</div>
+`;

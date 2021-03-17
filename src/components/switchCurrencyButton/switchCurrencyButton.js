@@ -3,7 +3,11 @@ import styles from './switchCurrencyButton.module.scss';
 import { ReactComponent as ExchangeIcon } from '@assets/images/exchange-icon.svg';
 
 export const SwitchCurrencyButton = ({ handleButtonClick }) => (
-	<button className={styles.switchCurrencyButton} onClick={handleButtonClick}>
+	<button
+		className={styles.switchCurrencyButton}
+		onClick={handleButtonClick}
+		data-testid='switchCurrencyButton'
+	>
 		<ExchangeIcon />
 	</button>
 );

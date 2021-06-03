@@ -9,8 +9,6 @@
   <p align="center">
     An awesome <strong>Currency Converter</strong> build in React, that also shows the currency value in Bitcoin.
     <br />
-    <a href="http://currency-converter.lars.amsterdam/">View Demo</a>
-    ·
     <a href="https://gitlab.com/larsamsterdam/react-currency-converter/-/issues">Report Bug</a>
   </p>
 </p>
